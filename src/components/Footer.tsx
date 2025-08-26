@@ -45,7 +45,7 @@ const Footer = () => {
             </p>
             <div className={styles.socialIcons}>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/amsa_overseas?igsh=MTFob3JpczJtYWowMg%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
