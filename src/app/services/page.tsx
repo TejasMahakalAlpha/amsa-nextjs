@@ -24,42 +24,42 @@ const services: Service[] = [
     title: "Website Development", 
     description: "We build modern, responsive, and high-performing websites using cutting-edge technologies like React and WordPress, designed to engage your audience and convert visitors into customers.", 
     icon: <FaLaptopCode />,
-    image: "/img/mission.jpg",
+    image: "/img/website.jpg",
     features: ["Custom UI/UX Design", "Responsive on all devices", "CMS Integration", "SEO Optimized Foundation"]
   },
   { 
     title: "Mobile App Development", 
     description: "From iOS to Android, we develop custom cross-platform mobile applications using Flutter and React Native that solve real-world problems and offer a seamless user experience.", 
     icon: <FaMobileAlt />,
-    image: "/img/mission.jpg",
+    image: "/img/mobile.jpg",
     features: ["iOS & Android Compatible", "High Performance", "Secure & Scalable", "Post-launch Support"]
   },
   { 
     title: "SEO & Digital Marketing", 
     description: "Our data-driven SEO and digital marketing strategies are designed to boost your search rankings, increase organic traffic, and generate qualified leads for your business.", 
     icon: <FaUsers />,
-    image: "/img/mission.jpg",
+    image: "/img/seo.jpg",
     features: ["Keyword Research & Strategy", "On-Page & Off-Page SEO", "Content Marketing", "Performance Analytics"]
   },
   { 
     title: "Full-Stack Development", 
     description: "We provide end-to-end development solutions, covering everything from frontend interfaces to backend logic (Node.js, Python) and database management (MySQL, MongoDB).", 
     icon: <FaCogs />,
-    image: "/img/mission.jpg",
+    image: "/img/fullstack.jpg",
     features: ["Frontend & Backend Expertise", "API Development", "Database Architecture", "Cloud Deployment"]
   },
   { 
     title: "E-Commerce Development", 
     description: "Launch your online store with our custom e-commerce solutions, featuring secure payment gateways, intuitive product pages, and a streamlined checkout process.", 
     icon: <FaShoppingCart />,
-    image: "/img/mission.jpg",
+    image: "/img/e-commerce.jpg",
     features: ["Custom Storefront Design", "Payment Gateway Integration", "Inventory Management", "Secure Checkout"]
   },
   { 
     title: "UI/UX Design", 
     description: "Our design process focuses on creating intuitive, accessible, and visually stunning interfaces through wireframes, prototypes, and user-centric design principles.", 
     icon: <FaPencilRuler />,
-    image: "/img/mission.jpg",
+    image: "/img/ui.jpg",
     features: ["User Research & Analysis", "Wireframing & Prototyping", "Interactive Design", "Usability Testing"]
   },
 ];

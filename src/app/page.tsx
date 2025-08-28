@@ -139,7 +139,7 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Why Choose Amsa?</h2>
           <div className={styles.whyUsGrid}>
             <div className={styles.whyUsImage} data-aos="fade-right">
-              <Image src="/img/mission.jpg" alt="Team collaborating" width={500} height={500} />
+              <Image src="/img/home.jpg" alt="Team collaborating" width={500} height={500} />
             </div>
             <div className={styles.whyUsList} data-aos="fade-left">
               {reasons.map((reason, idx) => (

@@ -77,7 +77,7 @@ export default function AboutPage() {
                         <p>We are a team of thinkers, creators, and technologists dedicated to building software that solves real-world problems and drives business growth.</p>
                     </div>
                     <div className={styles.headerImage}>
-                        <Image src="/img/mission.jpg" alt="Team collaborating on a project" width={600} height={400} />
+                        <Image src="/img/about.jpg" alt="Team collaborating on a project" width={600} height={400} />
                     </div>
                 </header>
 

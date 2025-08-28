@@ -54,7 +54,7 @@
 }
 
 .socialIcons a:hover {
-  background: #e63946; /* Kept from first block for better hover */
+  background: #103f42; /* Kept from first block for better hover */
   transform: scale(1.1);
 }
 
@@ -84,7 +84,7 @@
 }
 
 .linkList a:hover {
-  color: #e63946; /* Kept from first block */
+  color: #159098; /* Kept from first block */
 }
 
 .contactList {
@@ -110,7 +110,7 @@
 }
 
 .contactList a:hover {
-  color: #e63946; /* Kept from first block */
+  color: #5f39e6; /* Kept from first block */
 }
 
 .footerBottom {
