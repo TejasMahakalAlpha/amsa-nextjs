@@ -27,9 +27,39 @@ interface BlogPost {
 
 const allPosts: BlogPost[] = [
     { id: 1, title: "5 Emerging Trends in Software Development for 2025", description: "From AI-driven development to decentralized applications, we explore the latest practices reshaping how software is built. This includes a deeper look into the impact of quantum computing on cryptography and the rise of serverless architectures for scalable, cost-effective solutions.", image: "/img/future.jpg", author: "Jane Doe", date: "August 19, 2025", tags: ["Technology", "Future", "Dev"], readTime: "7 min read" },
-    { id: 2, title: "Why UI/UX Design is the Heartbeat of Digital Success", description: "A deep dive into how intuitive design can dramatically increase engagement, conversions, and brand loyalty. We analyze case studies from leading tech companies to demonstrate the tangible ROI of investing in a user-centric design process from day one.", image: "/img/ui-ux.jpg", author: "John Smith", date: "August 15, 2025", tags: ["Design", "UI/UX"], readTime: "5 min read" },
-    { id: 3, title: "Mastering DevOps: How to Accelerate Your Delivery Pipeline", description: "Discover how to implement core DevOps principles to accelerate your software release cycles while maintaining quality. This guide covers everything from continuous integration and deployment (CI/CD) to infrastructure as code (IaC) and monitoring.", image: "/img/devops.jpg", author: "Emily White", date: "August 10, 2025", tags: ["DevOps", "CI/CD"], readTime: "8 min read" },
-    { id: 4, title: "The Rise of Scalable IT: Building an Infrastructure That Grows", description: "From cloud solutions to microservices, we explore strategies for creating a flexible and robust IT infrastructure. Learn how to design systems that can handle rapid growth without compromising performance or security.", image: "/img/scalable-it.jpg", author: "Chris Green", date: "August 5, 2025", tags: ["Cloud", "Infrastructure"], readTime: "6 min read" },
+    {
+  "id": 2,
+  "title": "Beyond the Cloud: How Edge Computing is Powering the Next-Gen IoT",
+  "description": "We explore why processing data closer to its source is a game-changer. This post breaks down edge computing, its synergy with IoT devices, and real-world applications in smart cities, autonomous vehicles, and real-time analytics.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Rohan Verma",
+  "date": "August 28, 2025",
+  "tags": ["Technology", "Infrastructure", "Future"],
+  "readTime": "8 min read"
+}
+,
+   {
+  "id": 3,
+  "title": "The Post-Screen Era: Are We Ready for Brain-Computer Interfaces (BCIs)?",
+  "description": "Imagine controlling devices with just your thoughts. We delve into the current state of BCI technology, from medical breakthroughs to potential consumer applications, and discuss the immense ethical and social questions they raise for our future.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Dr. Alisha Ray",
+  "date": "August 27, 2025",
+  "tags": ["Future", "Technology", "UI/UX"],
+  "readTime": "9 min read"
+}
+,
+   {
+  "id": 4,
+  "title": "The AI Co-pilot: How Generative AI is Transforming the Developer Workflow",
+  "description": "From code generation with GitHub Copilot to automated testing and debugging, AI is no longer just a tool but a partner. This article explores how developers can leverage AI to boost productivity, learn faster, and focus on creative problem-solving.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Samir Khan",
+  "date": "August 26, 2025",
+  "tags": ["Dev", "Technology"],
+  "readTime": "7 min read"
+}
+,
     {
   "id": 5,
   "title": "Inclusive by Design: Why Accessibility is the Key to Great Product Design",
