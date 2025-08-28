@@ -52,14 +52,14 @@ const Footer = () => {
               >
                 <FaInstagram />
               </a>
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook"
               >
                 <FaFacebookF />
-              </a>
+              </a> */}
               <a
                 href="https://www.linkedin.com/company/amsa-overseas-private-ltd/"
                 target="_blank"

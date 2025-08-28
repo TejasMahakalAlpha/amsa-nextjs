@@ -5,7 +5,7 @@
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import {
-  FaFacebookF, FaTwitter, FaLinkedinIn,
+  FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram,
   FaMapMarkerAlt, FaPhoneAlt, FaEnvelope,
 } from "react-icons/fa";
 import styles from "./contact.module.css";
@@ -136,8 +136,15 @@ export default function ContactPage() {
               <li><FaMapMarkerAlt /> <span>Gera's Imperium Rise, Hinjewadi phase 2, Maharashtra 411057</span></li>
             </ul>
             <div className={styles.socialIcons}>
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
+              {/* <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebookF /></a> */}
+              <a
+                              href="https://www.instagram.com/amsa_overseas?igsh=MTFob3JpczJtYWowMg%3D%3D&utm_source=qr"
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label="Instagram"
+                            >
+                              <FaInstagram />
+                            </a>
               <a href="https://www.linkedin.com/company/amsa-overseas-private-ltd/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
             </div>
           </div>
