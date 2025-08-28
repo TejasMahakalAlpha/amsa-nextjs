@@ -100,6 +100,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(169, 146, 255, 0.3);
+  text-decoration: none;
 }
 
 .ctaButton:hover {
@@ -295,7 +296,11 @@
     font-size: 2.2rem; 
   }
   .heroSection {
-    min-height: 80vh;
+    /* min-height: 80vh; */
+    min-height: calc(80vh - 60px); /* adjust if header height is ~60px */
+
+    padding-top: 60px;
+ 
   }
   .heroSection h1 {
     font-size: 2rem;

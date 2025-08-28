@@ -42,10 +42,11 @@ const processSteps: ProcessStep[] = [ // ✨ FIX: Yahan ProcessStep[] type apply
 ];
 
 const reasons = [
-  { icon: <FaAward />, text: "Proven SAP Expertise" },
-  { icon: <FaTools />, text: "End-to-End IT Services" },
-  { icon: <FaGlobeAmericas />, text: "Global Project Experience" },
-  { icon: <FaHandshake />, text: "Agile & Customer-Centric Approach" },
+  { icon: <FaAward />, text: "Client-Centric Approach" },
+  { icon: <FaTools />, text: "Scalable tech stack" },
+  { icon: <FaGlobeAmericas />, text: "Quality assurance" },
+  { icon: <FaHandshake />, text: "Timely delivery" },
+    { icon: <FaAward />, text: "Affordable pricing" },
 ];
 
 const techLogos = [
@@ -135,7 +136,7 @@ export default function Home() {
 
         {/* Why Choose Us Section */}
         <section className={styles.section} data-aos="fade-up">
-          <h2 className={styles.sectionTitle}>Why Amsa?</h2>
+          <h2 className={styles.sectionTitle}>Why Choose Amsa?</h2>
           <div className={styles.whyUsGrid}>
             <div className={styles.whyUsImage} data-aos="fade-right">
               <Image src="/img/mission.jpg" alt="Team collaborating" width={500} height={500} />

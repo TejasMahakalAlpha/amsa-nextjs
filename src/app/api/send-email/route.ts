@@ -16,7 +16,7 @@ export async function POST(request: Request) {
     });
 
     const ownerMailOptions = {
-      from: process.env.GMAIL_EMAIL,
+      from: process.env.OWNER_EMAIL,
       to: process.env.OWNER_EMAIL,
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       replyTo: email, 
@@ -33,7 +33,7 @@ export async function POST(request: Request) {
     
     // 2. Confirmation Email to the User
     const userMailOptions = {
-      from: `"Amsa Overseas" <${process.env.GMAIL_EMAIL}>`,
+      from: `"Amsa Overseas" <${process.env.OWNER_EMAIL}>`,
       to: email,
       subject: `We've Received Your Message!`,
       html: `
