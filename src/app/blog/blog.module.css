@@ -13,45 +13,43 @@
     background: linear-gradient(to bottom, rgba(10, 18, 30, 0.8), rgba(10, 18, 30, 0.95));
 }
 .blogContent {
-    position: relative; z-index: 1; max-width: 1200px; /* Increased max-width for new layout */
+    position: relative; z-index: 1; max-width: 1200px; 
     margin: 0 auto; padding: 100px 20px 60px;
 }
 
-/* --- NEW STYLES FOR HERO SECTION --- */
 .heroSection {
     display: grid;
-    grid-template-columns: 400px 1fr; /* Left column for title, right for blog */
+    grid-template-columns: 400px 1fr; 
     gap: 40px;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start; 
     margin-bottom: 60px;
 }
 .heroLeft {
-    position: sticky; /* Makes the title section sticky on scroll */
+    position: sticky; 
     top: 100px;
 }
-/* --- END OF NEW HERO STYLES --- */
 
 .blogHeader {
-    text-align: left; /* Changed from center to left */
+    text-align: left; 
     margin-bottom: 30px;
 }
 .blogTitle {
-    font-size: 3.5rem; /* Increased size */
+    font-size: 3.5rem; 
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 .blogSubtitle {
     font-size: 1.1rem; color: #ccc;
-    margin: 0; /* Removed auto margin */
+    margin: 0; 
 }
 
 .filterBar {
     display: flex;
-    justify-content: flex-start; /* Changed from center */
+    justify-content: flex-start; 
     flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 0; /* Margin is now on heroSection */
+    margin-bottom: 0; 
 }
 .filterButton {
     background: rgba(255, 255, 255, 0.1);
@@ -69,15 +67,14 @@
     box-shadow: 0 0 15px rgba(169, 146, 255, 0.4);
 }
 
-/* --- STYLES FOR FULL POST (RIGHT SIDE) --- */
 .fullPostSection {
     background: rgba(36, 41, 56, 0.4);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
-    overflow: hidden; /* Important for border-radius on image */
-    margin: 0; /* Margin is now on parent */
+    overflow: hidden; 
+    margin: 0;
 }
 .fullPostImageContainer {
     position: relative; width: 100%; aspect-ratio: 16 / 9;
@@ -102,10 +99,9 @@
 }
 .fullPostMeta {
     display: flex; flex-wrap: wrap; gap: 10px; color: #98a3b3;
-    font-size: 0.9rem; margin-top: auto; /* Pushes meta to the bottom */
+    font-size: 0.9rem; margin-top: auto; 
 }
 
-/* --- STYLES FOR OTHER POSTS GRID --- */
 .postsGrid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;
 }
@@ -145,27 +141,24 @@
     font-size: 0.85rem; color: #94a3b8;
 }
 
-/* --- MODAL STYLES (NO CHANGE) --- */
 .modalOverlay {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px);
     display: flex; justify-content: center; align-items: center;
     z-index: 1000; animation: fadeIn 0.3s ease-out; padding: 20px;
 }
-/* ... (rest of modal styles are same) ... */
 .modalContent{background:#0c1427;color:#fff;border-radius:15px;width:100%;max-width:800px;max-height:90vh;overflow-y:auto;position:relative;border:1px solid rgba(255,255,255,.2)}.closeButton{position:absolute;top:15px;right:20px;background:0 0;border:none;color:#fff;font-size:2.5rem;cursor:pointer;line-height:1;z-index:10}.modalImageContainer{position:relative;width:100%;height:300px}.modalTextContent{padding:30px}.modalTags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:15px}.modalTags span{background:rgba(169,146,255,.1);color:#a992ff;padding:5px 12px;border-radius:20px;font-size:.85rem;font-weight:500}.modalTitle{font-size:2.2rem;font-weight:700;margin-bottom:10px}.modalMeta{display:flex;flex-wrap:wrap;gap:10px;color:#98a3b3;font-size:.9rem;margin-bottom:20px}.modalDescription{color:#d0d5dd;line-height:1.7;font-size:1rem}
 @keyframes fadeIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}
 
-/* --- RESPONSIVE STYLES FOR NEW LAYOUT --- */
 @media (max-width: 1024px) {
     .heroSection {
-        grid-template-columns: 1fr; /* Stack columns on tablets and mobile */
+        grid-template-columns: 1fr; 
     }
     .heroLeft {
-        position: static; /* Remove sticky position on stack */
+        position: static; 
     }
     .blogHeader {
-        text-align: center; /* Center align when stacked */
+        text-align: center; 
     }
     .blogTitle {
         font-size: 2.8rem;
@@ -174,7 +167,7 @@
         margin: 0 auto;
     }
     .filterBar {
-        justify-content: center; /* Center align when stacked */
+        justify-content: center; 
     }
 }
 

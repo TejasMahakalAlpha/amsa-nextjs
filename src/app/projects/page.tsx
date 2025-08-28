@@ -7,7 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./projects.module.css";
 
-// Project data interface
 interface Project {
   id: number;
   title: string;
@@ -16,7 +15,6 @@ interface Project {
   image: string;
 }
 
-// Project data
 const projectsData: Project[] = [
   {
     id: 1,
@@ -62,7 +60,6 @@ const projectsData: Project[] = [
   }
 ];
 
-// Component for the Popup Modal
 const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => void; }) => {
   if (!project) return null;
 
@@ -85,7 +82,6 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
   );
 };
 
-// Main page component
 export default function ProjectsPage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
@@ -161,7 +157,6 @@ export default function ProjectsPage() {
         </section>
       </main>
 
-      {/* Conditionally render the modal when a project is selected */}
       {selectedProject && (
         <ProjectModal project={selectedProject} onClose={handleCloseModal} />
       )}

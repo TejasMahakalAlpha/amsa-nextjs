@@ -20,7 +20,6 @@
     margin-bottom: 100px;
 }
 
-/* --- MODIFIED STYLES START HERE --- */
 
 .aboutHeader {
     display: grid;
@@ -46,12 +45,10 @@
     height: auto;
 }
 
-.missionSection {
-    /* Styles for this section are now simpler since it only holds the content */
-    /* The original grid layout is no longer needed here */
-}
+/* .missionSection { */
+/* } */
 
-/* --- MODIFIED STYLES END HERE --- */
+
 
 .icon {
     font-size: 2rem; color: #a992ff; margin-right: 20px; flex-shrink: 0;
@@ -246,7 +243,7 @@
 }
 
 @media (max-width: 992px) {
-    .aboutHeader { /* Added rule for responsiveness */
+    .aboutHeader { 
         grid-template-columns: 1fr;
     }
     .missionContent, .statsSection, .valuesGrid {
@@ -256,7 +253,7 @@
 
 @media (max-width: 768px) {
     .aboutHeader h1 { font-size: 2.5rem; }
-    .missionContent { /* Added rule for responsiveness */
+    .missionContent { 
         grid-template-columns: 1fr;
     }
     .statsSection {

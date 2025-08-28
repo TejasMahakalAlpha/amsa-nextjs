@@ -70,7 +70,7 @@ export default function AboutPage() {
             </div>
 
             <main className={styles.aboutContent}>
-                {/* UPDATED HEADER SECTION */}
+                
                 <header className={styles.aboutHeader} data-aos="fade-up">
                     <div className={styles.headerText}>
                         <h1>Driven by Innovation, Defined by Excellence</h1>
