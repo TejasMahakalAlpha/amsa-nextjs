@@ -127,7 +127,7 @@ export default function ServicesClientPage() {
       <main className={styles.mainContent}>
         <section className={styles.heroSection}>
           <p className={styles.heroSubtitle}>Our Expertise</p>
-          <h1 className={styles.heroTitle}>Digital Solutions, <br />Engineered for Growth.</h1>
+          <h1 className={styles.heroTitle}>Digital Solutions, <br />Engineered for Growth</h1>
           <p className={styles.heroDescription}>We combine strategy, design, and technology to build future-ready digital products that drive business forward.</p>
         </section>
 

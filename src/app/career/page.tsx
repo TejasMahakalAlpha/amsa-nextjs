@@ -28,11 +28,11 @@ interface TeamMember {
     quote: string;
 }
 
-const teamData: TeamMember[] = [
-    { name: "Priya Sharma", role: "Lead Engineer", image: "/img/model1.jpg", quote: "The best part about working here is the freedom to innovate and the supportive team." },
-    { name: "Rahul Verma", role: "Product Designer", image: "/img/model1.jpg", quote: "We're constantly pushing boundaries. It's an exciting place to be for any creative professional." },
-    { name: "Anjali Mehta", role: "Marketing Head", image: "/img/model1.jpg", quote: "The collaborative spirit is amazing. We celebrate every win together." },
-];
+// const teamData: TeamMember[] = [
+//     { name: "Priya Sharma", role: "Lead Engineer", image: "/img/model1.jpg", quote: "The best part about working here is the freedom to innovate and the supportive team." },
+//     { name: "Rahul Verma", role: "Product Designer", image: "/img/model1.jpg", quote: "We're constantly pushing boundaries. It's an exciting place to be for any creative professional." },
+//     { name: "Anjali Mehta", role: "Marketing Head", image: "/img/model1.jpg", quote: "The collaborative spirit is amazing. We celebrate every win together." },
+// ];
 
 type JobPosition = {
     title: string;
@@ -108,7 +108,7 @@ export default function CareerClientPage() {
                     </div>
                 </section>
 
-                <section className={styles.teamSection}>
+                {/* <section className={styles.teamSection}>
                     <div className={styles.container}>
                         <h2 className={styles.sectionTitle}>The People Behind the Progress</h2>
                         <div className={styles.teamGrid}>
@@ -124,7 +124,7 @@ export default function CareerClientPage() {
                             ))}
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <section id="open-positions" className={styles.positionsSection}>
                     <div className={styles.container}>

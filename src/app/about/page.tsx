@@ -26,20 +26,20 @@ interface TeamMember {
 }
 
 const journeyData: JourneyItem[] = [
-    { year: "2019", title: "Company Founded", description: "Started with a vision to transform businesses through technology.", icon: <FaRegBuilding /> },
-    { year: "2020", title: "First Major Client", description: "Successfully delivered our first enterprise-level solution.", icon: <FaBriefcase /> },
-    { year: "2021", title: "Team Expansion", description: "Grew our team to over 25+ skilled professionals.", icon: <FaUserFriends /> },
-    { year: "2022", title: "Global Expansion", description: "Extended our services to international markets.", icon: <FaGlobeEurope /> },
-    { year: "2023", title: "Industry Recognition", description: "Received awards for innovation and excellence.", icon: <FaAward /> },
-    { year: "2024", title: "New Office Launch", description: "Inaugurated a new state-of-the-art development center in Pune.", icon: <FaMapMarkedAlt /> }
+    { year: "2017", title: "Foundation", description: "AMSA Overseas Pvt. Ltd. was founded with a vision to deliver innovative IT solutions and digital services.", icon: <FaRegBuilding /> },
+    { year: "2019", title: "Service Expansion", description: "Introduced mobile app development and custom software solutions to meet growing client needs.", icon: <FaBriefcase /> },
+    { year: "2021", title: "Diversification", description: "Launched ERP, CRM, and SaaS development services, strengthening our enterprise solutions portfolio.", icon: <FaUserFriends /> },
+    { year: "2023", title: "Global Outreach", description: "Despite global challenges, we scaled operations and started catering to clients across multiple countries.", icon: <FaGlobeEurope /> },
+    { year: "2024", title: "Scaling Up", description: "Enhanced our technical expertise across modern frameworks (React, Flutter, AI-driven solutions).", icon: <FaAward /> },
+    { year: "2025", title: "Today & Beyond", description: "Continuing to innovate, build scalable solutions, and support businesses with technology-driven growth worldwide.", icon: <FaMapMarkedAlt /> }
 ];
 
-const teamData: TeamMember[] = [
-    { name: "John Doe", role: "CEO & Founder", image: "/img/model1.jpg" },
-    { name: "Jane Smith", role: "CTO", image: "/img/model1.jpg" },
-    { name: "Peter Jones", role: "Lead Developer", image: "/img/model1.jpg" },
-    { name: "Emily White", role: "Project Manager", image: "/img/model1.jpg" }
-];
+// const teamData: TeamMember[] = [
+//     { name: "John Doe", role: "CEO & Founder", image: "/img/model1.jpg" },
+//     { name: "Jane Smith", role: "CTO", image: "/img/model1.jpg" },
+//     { name: "Peter Jones", role: "Lead Developer", image: "/img/model1.jpg" },
+//     { name: "Emily White", role: "Project Manager", image: "/img/model1.jpg" }
+// ];
 
 
 const StatCounter = ({ end, suffix, text }: { end: number, suffix: string, text: string }) => {
@@ -101,10 +101,10 @@ export default function AboutPage() {
                 </section>
 
                 <section className={styles.statsSection} data-aos="fade-up">
-                    <StatCounter end={50} suffix="+" text="Projects Delivered" />
-                    <StatCounter end={25} suffix="+" text="Happy Clients" />
-                    <StatCounter end={5} suffix="+" text="Years in Business" />
-                    <StatCounter end={10} suffix="+" text="Experts on Team" />
+                    <StatCounter end={15} suffix="+" text="Projects Delivered" />
+                    <StatCounter end={12} suffix="+" text="Happy Clients" />
+                    <StatCounter end={8} suffix="+" text="Years in Business" />
+                    <StatCounter end={9} suffix="+" text="Experts on Team" />
                 </section>
 
                 <section className={styles.journeySection} data-aos="fade-up">
@@ -128,7 +128,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                <section className={styles.teamSection} data-aos="fade-up">
+                {/* <section className={styles.teamSection} data-aos="fade-up">
                     <h2>Meet Our Team</h2>
                     <p>The passionate minds behind our success.</p>
                     <div className={styles.teamGrid}>
@@ -142,7 +142,7 @@ export default function AboutPage() {
                             </div>
                         ))}
                     </div>
-                </section>
+                </section> */}
 
                 <section className={styles.valuesSection} data-aos="fade-up">
                     <h2>Our Core Values</h2>
