@@ -30,6 +30,72 @@ const allPosts: BlogPost[] = [
     { id: 2, title: "Why UI/UX Design is the Heartbeat of Digital Success", description: "A deep dive into how intuitive design can dramatically increase engagement, conversions, and brand loyalty. We analyze case studies from leading tech companies to demonstrate the tangible ROI of investing in a user-centric design process from day one.", image: "/img/ui-ux.jpg", author: "John Smith", date: "August 15, 2025", tags: ["Design", "UI/UX"], readTime: "5 min read" },
     { id: 3, title: "Mastering DevOps: How to Accelerate Your Delivery Pipeline", description: "Discover how to implement core DevOps principles to accelerate your software release cycles while maintaining quality. This guide covers everything from continuous integration and deployment (CI/CD) to infrastructure as code (IaC) and monitoring.", image: "/img/devops.jpg", author: "Emily White", date: "August 10, 2025", tags: ["DevOps", "CI/CD"], readTime: "8 min read" },
     { id: 4, title: "The Rise of Scalable IT: Building an Infrastructure That Grows", description: "From cloud solutions to microservices, we explore strategies for creating a flexible and robust IT infrastructure. Learn how to design systems that can handle rapid growth without compromising performance or security.", image: "/img/scalable-it.jpg", author: "Chris Green", date: "August 5, 2025", tags: ["Cloud", "Infrastructure"], readTime: "6 min read" },
+    {
+  "id": 5,
+  "title": "Inclusive by Design: Why Accessibility is the Key to Great Product Design",
+  "description": "Accessibility isn't just a compliance checkbox; it's a foundation for creating products that work for everyone. We cover practical tips on color contrast, semantic HTML, ARIA labels, and designing for neurodiversity to build truly inclusive experiences.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Priya Sharma",
+  "date": "August 25, 2025",
+  "tags": ["Design", "UI/UX"],
+  "readTime": "8 min read"
+},
+{
+  "id": 6,
+  "title": "A Guide to Microinteractions: The Small Details That Create Big UX Wins",
+  "description": "What makes an app feel delightful to use? Often, it's the microinteractions. We break down the four key parts of a microinteraction and show examples of how subtle animations and feedback can drastically improve usability and user satisfaction.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Ben Carter",
+  "date": "August 24, 2025",
+  "tags": ["UI/UX", "Design"],
+  "readTime": "6 min read"
+},
+{
+  "id": 7,
+  "title": "Shift-Left Security: How to Integrate Security into Your DevOps Pipeline",
+  "description": "DevSecOps is the future of building secure and robust applications. This post explains the 'shift-left' principle and provides a roadmap for integrating automated security tools (SAST, DAST, IAST) directly into your CI/CD pipeline.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Anya Petrova",
+  "date": "August 23, 2025",
+  "tags": ["DevOps", "CI/CD", "Infrastructure"],
+  "readTime": "8 min read"
+},
+{
+  "id": 8,
+  "title": "GitOps Explained: The Next Evolution of CI/CD and Infrastructure",
+  "description": "Using Git as the single source of truth for both application and infrastructure deployment. We explain what GitOps is, how it works with tools like Argo CD and Flux, and why it's becoming the standard for managing Kubernetes and cloud-native environments.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Kenji Tanaka",
+  "date": "August 22, 2025",
+  "tags": ["CI/CD", "DevOps", "Infrastructure"],
+  "readTime": "7 min read"
+},
+{
+  "id": 9,
+  "title": "Mastering Cloud Costs: An Introduction to FinOps for Engineers",
+  "description": "Your cloud bill is skyrocketing, what do you do? This article introduces FinOps, a cultural practice that brings financial accountability to the variable spend model of cloud. Learn actionable strategies for cost optimization, budgeting, and forecasting.",
+  "image": "/img/scalable-it.jpg",
+  "author": "Maria Garcia",
+  "date": "August 21, 2025",
+  "tags": ["Cloud", "DevOps", "Infrastructure"],
+  "readTime": "7 min read"
+},
+{
+  "id": 10,
+  "title": "Terraform vs. Pulumi: Choosing the Right Infrastructure as Code Tool in 2025",
+  "description": "A deep dive into the two giants of Infrastructure as Code. We compare Terraform's declarative HCL with Pulumi's use of general-purpose languages, helping you decide which tool is the best fit for your team's skillset and project complexity.",
+  "image": "/img/scalable-it.jpg",
+  "author": "David Chen",
+  "date": "August 20, 2025",
+  "tags": ["Infrastructure", "Cloud", "DevOps"],
+  "readTime": "9 min read"
+},
+
+
+
+
+
+
 ];
 
 const allCategories = ['All', ...new Set(allPosts.flatMap(post => post.tags))];
