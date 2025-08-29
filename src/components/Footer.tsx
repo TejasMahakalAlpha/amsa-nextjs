@@ -14,7 +14,7 @@ import styles from './Footer.module.css';
 const Footer = () => {
   const quickLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About Us' },
+    { href: '/about', label: 'About ' },
     { href: '/services', label: 'Services' },
     { href: '/projects', label: 'Projects' },
   ];

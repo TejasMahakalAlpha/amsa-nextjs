@@ -18,46 +18,32 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "EduApp - LMS Mobile App",
+    title: "GTAsterix",
     description: "A comprehensive cross-platform Learning Management System for coaching institutes, featuring interactive modules, real-time analytics, and secure parent-teacher communication.",
-    tags: ["Flutter", "Firebase", "Dart", "Mobile"],
-    image: "/img/about.jpg"
+    tags: ["React", "Java Spring Boot", "MySQL", ],
+    image: "/img/white-GTA.png"
   },
   {
     id: 2,
-    title: "BuildMySite - No-Code Builder",
+    title: "Flint Infotech",
     description: "An intuitive drag-and-drop website builder designed to empower small businesses. This no-code solution allows users to create stunning, responsive websites in minutes.",
-    tags: ["React", "Node.js", "MongoDB", "Web App"],
-    image: "/img/about.jpg"
+    tags: ["React", "Java Spring Boot", "MySQL", ],
+    image: "/img/Flint.png"
   },
   {
     id: 3,
-    title: "LuxeStyle - E-commerce Platform",
+    title: "Mooropan",
     description: "Developed a bespoke Shopify Plus theme and integrated custom apps for a luxury fashion brand, resulting in a 40% increase in conversion rates and a seamless user experience.",
-    tags: ["Shopify", "Liquid", "React", "E-commerce"],
-    image: "/img/about.jpg"
+    tags: ["React", "Java Spring Boot", "MySQL", ],
+    image: "/img/moorpan.png"
   },
   {
     id: 4,
-    title: "Fintech Enterprise ERP System",
+    title: "Caryanams",
     description: "Built a secure, scalable Enterprise Resource Planning (ERP) system for a financial services client, automating complex invoicing, reporting, and compliance workflows.",
-    tags: ["Java", "Spring Boot", "PostgreSQL", "AWS"],
-    image: "/img/about.jpg"
+    tags: ["React", "Java Spring Boot", "MySQL", ],
+    image: "/img/Caryanams.png"
   },
-  {
-    id: 5,
-    title: "HealthConnect App UI/UX",
-    description: "Led the complete UI/UX design process for a health and wellness app, focusing on user-centric design to create an intuitive and calming user experience from scratch.",
-    tags: ["Figma", "User Research", "Prototyping", "UI/UX"],
-    image: "/img/about.jpg"
-  },
-  {
-    id: 6,
-    title: "SEO Strategy for PharmaCo",
-    description: "Executed a comprehensive keyword strategy, technical SEO audit, and high-quality content creation that boosted the client's organic traffic by over 300% in 3 months.",
-    tags: ["SEO", "Content Strategy", "Analytics"],
-    image: "/img/about.jpg"
-  }
 ];
 
 const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => void; }) => {
@@ -68,7 +54,8 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <button className={styles.closeButton} onClick={onClose}>&times;</button>
         <div className={styles.modalImageContainer}>
-          <Image src={project.image} alt={project.title} fill style={{ objectFit: 'cover' }} />
+          {/* Image style is set to 'contain' to prevent cropping */}
+          <Image src={project.image} alt={project.title} fill style={{ objectFit: 'contain' }} />
         </div>
         <div className={styles.modalTextContent}>
           <h2>{project.title}</h2>
@@ -123,23 +110,26 @@ export default function ProjectsPage() {
               data-aos-delay={index * 100}
               onClick={() => handleProjectClick(project)}
             >
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className={styles.cardImage}
-                style={{ objectFit: 'cover' }}
-              />
+              <div className={styles.cardImageWrapper}>
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className={styles.cardImage}
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              
               <div className={styles.cardOverlay}></div>
+
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>{project.title}</h3>
-                <div className={styles.cardHoverContent}>
-                  <p className={styles.cardDescription}>{project.description}</p>
-                  <div className={styles.cardTags}>
-                    {project.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
+                <p className={styles.cardDescription}>{project.description}</p>
+                
+                <div className={styles.cardTags}>
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
                 </div>
               </div>
             </div>
