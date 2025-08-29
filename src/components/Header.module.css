@@ -1,4 +1,4 @@
-/* =============== Base Header =============== */
+
 .header {
   position: fixed;
   inset: 0 auto auto 0;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-/* Scrolled / menu open background */
+
 .scrolled,
 .menuOpen {
   background: rgba(255, 255, 255, 0.92);
@@ -31,7 +31,7 @@
   padding: 0.6rem 0;
 }
 
-/* =============== Logo =============== */
+
 .logoImg {
   height: 45px;
   width: auto;
@@ -42,7 +42,7 @@
   height: 40px;
 }
 
-/* =============== Nav (desktop) =============== */
+
 .nav {
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
   transition: gap 0.3s ease;
 }
 
-/* Base link */
+
 .navLink {
   position: relative;
   text-decoration: none;
@@ -74,7 +74,7 @@
 
 .navLink:hover { color: #00A3FF; }
 
-/* underline animation + active state */
+
 .navLink::after {
   content: '';
   position: absolute;
@@ -90,7 +90,7 @@
   transform: scaleX(1);
 }
 
-/* CTA Button */
+
 .ctaButton {
   text-decoration: none;
   font-weight: 600;
@@ -108,7 +108,7 @@
   box-shadow: 0 10px 24px rgba(0, 123, 255, 0.35);
 }
 
-/* =============== Hamburger =============== */
+
 .menuIcon {
   display: none;
   cursor: pointer;
@@ -145,24 +145,22 @@
 .menuOpen .bar3 { transform: translateY(-9.5px) rotate(-45deg); }
 
 
-/* ================================================= */
-/* ===== ✨ IMPROVED RESPONSIVE BREAKPOINTS ✨ ===== */
-/* ================================================= */
 
-/* For Small Laptops (1025px to 1200px) */
+
+
 @media (max-width: 1200px) {
   .navLinks {
-    gap: 1.5rem; /* Reduce space between links */
+    gap: 1.5rem;
   }
   .navLink {
-    font-size: 0.95rem; /* Slightly smaller font */
+    font-size: 0.95rem; 
   }
   .ctaButton {
-    padding: 0.5rem 1.1rem; /* Slightly smaller button */
+    padding: 0.5rem 1.1rem; 
   }
 }
 
-/* For Tablets (switches to hamburger) */
+
 @media (max-width: 1024px) {
   .nav {
     display: none;
@@ -195,7 +193,7 @@
   }
 }
 
-/* For Small Phones */
+
 @media (max-width: 480px) {
   .container { padding: 0 1.25rem; }
   .navLink, .ctaButton { font-size: 1.15rem; }

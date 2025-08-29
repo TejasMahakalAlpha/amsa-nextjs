@@ -1,4 +1,4 @@
-// components/Footer/Footer.tsx
+
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -27,9 +27,9 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* ✨ Grid Layout */}
+        
         <div className={styles.footerGrid}>
-          {/* Column 1: About */}
+          
           <div className={styles.footerColumn}>
             <Link href="/" className={styles.footerLogo}>
               <Image
@@ -52,14 +52,7 @@ const Footer = () => {
               >
                 <FaInstagram />
               </a>
-              {/* <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Facebook"
-              >
-                <FaFacebookF />
-              </a> */}
+              
               <a
                 href="https://www.linkedin.com/company/amsa-overseas-private-ltd/"
                 target="_blank"
@@ -71,7 +64,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links */}
+          
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Quick Links</h4>
             <ul className={styles.linkList}>
@@ -83,7 +76,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Support */}
+         
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Support</h4>
             <ul className={styles.linkList}>
@@ -95,7 +88,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Contact */}
+          
           <div className={styles.footerColumn}>
             <h4 className={styles.columnTitle}>Contact Us</h4>
             <ul className={styles.contactList}>
@@ -119,7 +112,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* ✨ Bottom Bar */}
+    
         <div className={styles.footerBottom}>
           <p>
             &copy; {new Date().getFullYear()} AMSA Overseas. All Rights

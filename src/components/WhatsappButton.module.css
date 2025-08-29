@@ -1,4 +1,4 @@
-/* src/components/WhatsappButton.module.css */
+
 .whatsapp-float {
   position: fixed;
   width: 60px;
@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
 
-  /* Entrance animation */
+
   opacity: 0;
   transform: translateY(50px);
   animation: slideIn 1s ease-out forwards;
@@ -24,14 +24,14 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Icon styling */
+
 .whatsapp-icon {
   color: white;
   text-decoration: none; 
   font-style: normal; 
 }
 
-/* Hover effect: subtle scale and glow */
+
 .whatsapp-float:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 12px 24px rgba(37, 211, 102, 0.5);

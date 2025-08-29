@@ -21,42 +21,42 @@ const projectsData: Project[] = [
     title: "EduApp - LMS Mobile App",
     description: "A comprehensive cross-platform Learning Management System for coaching institutes, featuring interactive modules, real-time analytics, and secure parent-teacher communication.",
     tags: ["Flutter", "Firebase", "Dart", "Mobile"],
-    image: "/img/mission.jpg"
+    image: "/img/about.jpg"
   },
   {
     id: 2,
     title: "BuildMySite - No-Code Builder",
     description: "An intuitive drag-and-drop website builder designed to empower small businesses. This no-code solution allows users to create stunning, responsive websites in minutes.",
     tags: ["React", "Node.js", "MongoDB", "Web App"],
-    image: "/img/mission.jpg"
+    image: "/img/about.jpg"
   },
   {
     id: 3,
     title: "LuxeStyle - E-commerce Platform",
     description: "Developed a bespoke Shopify Plus theme and integrated custom apps for a luxury fashion brand, resulting in a 40% increase in conversion rates and a seamless user experience.",
     tags: ["Shopify", "Liquid", "React", "E-commerce"],
-    image: "/img/mission.jpg"
+    image: "/img/about.jpg"
   },
   {
     id: 4,
     title: "Fintech Enterprise ERP System",
     description: "Built a secure, scalable Enterprise Resource Planning (ERP) system for a financial services client, automating complex invoicing, reporting, and compliance workflows.",
     tags: ["Java", "Spring Boot", "PostgreSQL", "AWS"],
-    image: "/img/mission.jpg"
+    image: "/img/about.jpg"
   },
   {
     id: 5,
     title: "HealthConnect App UI/UX",
     description: "Led the complete UI/UX design process for a health and wellness app, focusing on user-centric design to create an intuitive and calming user experience from scratch.",
     tags: ["Figma", "User Research", "Prototyping", "UI/UX"],
-    image: "/img/mission.jpg"
+    image: "/img/about.jpg"
   },
   {
     id: 6,
     title: "SEO Strategy for PharmaCo",
     description: "Executed a comprehensive keyword strategy, technical SEO audit, and high-quality content creation that boosted the client's organic traffic by over 300% in 3 months.",
     tags: ["SEO", "Content Strategy", "Analytics"],
-    image: "/img/mission.jpg"
+    image: "/img/about.jpg"
   }
 ];
 

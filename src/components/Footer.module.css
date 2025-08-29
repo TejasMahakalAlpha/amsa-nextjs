@@ -1,4 +1,4 @@
-/* footer.module.css */
+
 
 .footer {
   background: #0d0d0d;
@@ -50,16 +50,15 @@
   padding: 10px;
   border-radius: 50%;
   transition: 0.3s ease;
-  font-size: 1.2rem; /* Kept from second block */
+  font-size: 1.2rem; 
 }
 
 .socialIcons a:hover {
-  background: #103f42; /* Kept from first block for better hover */
-  transform: scale(1.1);
+  background: #103f42; 
 }
 
 .columnTitle {
-  font-size: 18px; /* Kept from first block */
+  font-size: 18px; 
   font-weight: 600;
   margin-bottom: 12px;
   color: #fff;
@@ -77,14 +76,14 @@
 }
 
 .linkList a {
-  color: #ccc; /* Kept from second block */
-  font-size: 0.9rem; /* Kept from second block */
+  color: #ccc;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .linkList a:hover {
-  color: #159098; /* Kept from first block */
+  color: #159098;
 }
 
 .contactList {
@@ -95,35 +94,34 @@
 
 .contactList li {
   display: flex;
-  /* ✨ FIX: 'center' se 'flex-start' kiya takay icon upar align ho */
   align-items: flex-start; 
   gap: 10px;
   margin-bottom: 10px;
-  font-size: 0.9rem; /* Kept from second block */
-  color: #ccc; /* Kept from second block */
+  font-size: 0.9rem;
+  color: #ccc; 
 }
 
 .contactList a {
-  color: #ccc; /* Kept from second block */
+  color: #ccc;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .contactList a:hover {
-  color: #5f39e6; /* Kept from first block */
+  color: #5f39e6; 
 }
 
 .footerBottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px; /* Adjusted for consistency */
+  padding-top: 20px; 
   margin-top: 20px;
   text-align: center;
-  font-size: 0.8rem; /* Kept from second block */
+  font-size: 0.8rem; 
   color: #aaa;
 }
 
-/* ✅ Responsive */
-@media (max-width: 992px) { /* Added a breakpoint for tablets */
+
+@media (max-width: 992px) { 
   .footerGrid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
@@ -132,7 +130,7 @@
 @media (max-width: 768px) {
   .footerGrid {
     grid-template-columns: 1fr 1fr;
-    gap: 30px; /* Adjusted gap */
+    gap: 30px; 
   }
 }
 
@@ -143,7 +141,7 @@
   }
   .contactList li {
     justify-content: center;
-    /* On mobile, text can be long, so aligning to top is better */
+    
     align-items: flex-start; 
   }
   .socialIcons {

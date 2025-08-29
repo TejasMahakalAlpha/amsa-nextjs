@@ -11,7 +11,6 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // Scroll state
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     onScroll();
@@ -19,12 +18,10 @@ const Header = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMenuOpen(false);
   }, [pathname]);
 
-  // Lock body scroll when menu is open (no CSS module hacks)
   useEffect(() => {
     const original = document.body.style.overflow;
     document.body.style.overflow = menuOpen ? 'hidden' : original || '';
@@ -40,7 +37,7 @@ const Header = () => {
     { path: '/projects', label: 'Project' },
     { path: '/career', label: 'Career' },
     { path: '/blog', label: 'Blog' },
-    { path: '/contact', label: 'Contact' }, // CTA
+    { path: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -50,7 +47,7 @@ const Header = () => {
       }`}
     >
       <div className={styles.container}>
-        {/* Logo */}
+        
         <div className={styles.logo}>
           <Link href="/" aria-label="Go to homepage">
             <Image
@@ -64,7 +61,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop / Mobile Nav */}
+      
         <nav
           id="primaryNav"
           className={`${styles.nav} ${menuOpen ? styles.open : ''}`}
@@ -90,7 +87,7 @@ const Header = () => {
           </div>
         </nav>
 
-        {/* Hamburger */}
+       
         <button
           type="button"
           className={styles.menuIcon}

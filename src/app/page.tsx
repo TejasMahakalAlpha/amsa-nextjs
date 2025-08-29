@@ -1,40 +1,37 @@
 "use client";
 
-import { useEffect, ReactNode } from "react"; // ✨ FIX: ReactNode ko import kiya hai icons ki typing ke liye
+import { useEffect, ReactNode } from "react"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { TypeAnimation } from 'react-type-animation';
 import Image from "next/image";
 import {
-  FaBullseye, FaPencilRuler, FaCode, FaRocket, // Process Icons
-  FaCogs, FaLaptopCode, FaSyncAlt, // Offerings Icons
-  FaAward, FaTools, FaGlobeAmericas, FaHandshake, // Reasons Icons
+  FaBullseye, FaPencilRuler, FaCode, FaRocket, 
+  FaCogs, FaLaptopCode, FaSyncAlt, 
+  FaAward, FaTools, FaGlobeAmericas, FaHandshake, 
 } from "react-icons/fa";
 import Link from 'next/link';
 import styles from './page.module.css';
 
-// ✨ FIX: 'offerings' array ke liye interface define kiya hai
 interface Offering {
   icon: ReactNode;
   title: string;
   desc: string;
 }
 
-// ✨ FIX: 'processSteps' array ke liye interface define kiya hai
 interface ProcessStep {
   icon: ReactNode;
   title: string;
   desc: string;
 }
 
-// Data for sections
-const offerings: Offering[] = [ // ✨ FIX: Yahan Offering[] type apply kiya hai
+const offerings: Offering[] = [
   { icon: <FaCogs />, title: "SAP ERP Solutions", desc: "Streamline your business operations with scalable ERP systems." },
   { icon: <FaLaptopCode />, title: "Custom Software", desc: "Build intelligent and efficient applications tailored to your needs." },
   { icon: <FaSyncAlt />, title: "System Integration", desc: "Optimize your IT infrastructure with our expert consulting." },
 ];
 
-const processSteps: ProcessStep[] = [ // ✨ FIX: Yahan ProcessStep[] type apply kiya hai
+const processSteps: ProcessStep[] = [ 
   { icon: <FaBullseye />, title: " Discovery", desc: "We start by understanding your vision, goals, and requirements." },
   { icon: <FaPencilRuler />, title: "Design & UX", desc: "We craft intuitive and beautiful user interfaces for the best experience." },
   { icon: <FaCode />, title: " Development", desc: "Our expert developers bring the designs to life with clean, efficient code." },
@@ -74,7 +71,6 @@ export default function Home() {
 
   return (
     <div className={styles.homePageWrapper}>
-      {/* Background video */}
       <div className={styles.backgroundVideoContainer}>
         <video autoPlay muted loop playsInline className={styles.backgroundVideo}>
           <source src="/video/bg_Video.mp4" type="video/mp4" />
@@ -83,7 +79,6 @@ export default function Home() {
       </div>
       
       <main className={styles.contentWrapper}>
-        {/* Hero Section */}
         <section className={styles.heroSection}>
           <h1 data-aos="fade-up">Empowering Businesses Through</h1>
           <TypeAnimation
@@ -106,7 +101,6 @@ export default function Home() {
           </Link>
         </section>
 
-        {/* Offerings Section */}
         <section className={styles.section} data-aos="fade-up">
           <h2 className={styles.sectionTitle}>Our Core Offerings</h2>
           <div className={styles.offeringsGrid}>
@@ -120,7 +114,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Our Process Section */}
         <section className={styles.section} data-aos="fade-up">
           <h2 className={styles.sectionTitle}>Our Process</h2>
           <div className={styles.processGrid}>
@@ -134,7 +127,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
         <section className={styles.section} data-aos="fade-up">
           <h2 className={styles.sectionTitle}>Why Choose Amsa?</h2>
           <div className={styles.whyUsGrid}>
@@ -152,7 +144,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Technology Stack Section */}
         <section className={styles.techSection}>
           <h2 className={styles.sectionTitle}>Technologies We Master</h2>
           <div className={styles.marquee}>
