@@ -21,7 +21,7 @@ const projectsData: Project[] = [
     title: "GTAsterix",
     description: "A comprehensive cross-platform Learning Management System for coaching institutes, featuring interactive modules, real-time analytics, and secure parent-teacher communication.",
     tags: ["React", "Java Spring Boot", "MySQL", ],
-    image: "/img/white-GTA.png"
+    image: "/img/white--gta.png"
   },
   {
     id: 2,
